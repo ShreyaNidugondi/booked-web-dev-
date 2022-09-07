@@ -1,0 +1,45 @@
+.title{
+    font-family: sans-serif;
+    color: #dc2d5e; 
+}
+.container{
+    position: relative;
+    width: 300px;
+    height: 300 px;
+    display: inline-block;
+}
+.image{
+    display:block;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+.overlay{
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color:aquamarine;
+}
+.container:hover .overlay{
+    opacity: 1 ;
+}
+.text{
+    color: black;
+    font-weight: 750;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.overlayFade{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: aquamarine;
+}
+.container:hover .overlayFade{
+    width: 100%;
+    opacity: 0.5;
+}
